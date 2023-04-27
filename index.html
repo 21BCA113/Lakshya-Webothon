@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+           // Countdown Timer Script
+           var countDownDate = new Date("April 28, 2023 09:00:00").getTime();
+            var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("countdown").innerHTML = days + "D : " + hours + "H : " + minutes + "M : " + seconds + "S ";
+            var hue = Math.round((distance % 360) / (1000 * 60 * 60 * 24) * 360);
+            document.getElementById("countdown").style.backgroundColor = "rgba(245,170,43,1)";
+        }, 1000);
+    </script>
+</head>
+<body>
+    <section id="section-1">
+        <h1>Lakshya Web A Thon Registration</h1><br>
+        <!-- <p>Join us for a fun-filled day of Coding, Designing, and raising funds for a good cause. Our event will take place on Saturday, August 28th, 2021, at Central Park in New York City.</p> -->
+        <div class="countdown-wrapper">
+            <div id="countdown" class="countdown-circle"></div>
+        </div>
+    </section>
+    <section>
+        <form id="registration-form">
+            <h2>Registration Form</h2>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address"><br><br>
+            <br><br>
+            <input type="submit" value="Register" id="submit-button">
+        </form>
+    </section>
+    <footer>
+    <p>© 2023 Lakshya Web A Thon. All rights reserved.</p>
+    </footer>
+    
+    </body>
+    </html>

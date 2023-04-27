@@ -1,0 +1,147 @@
+*{
+    text-align: center;
+}
+:root {
+    --main-background-color: #a34a42;
+    --countdown-background-color: #f5aa2b;
+    --form-background-color: #ffffff;
+    --form-input-background-color: #f2f2f2;
+    --form-submit-background-color: #3b3b3b;
+    --form-submit-hover-background-color: #555555;
+    --section-heading-color: #ffffff;
+  }
+
+  ::-webkit-scrollbar{
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track{
+    background-color: var(--main-background-color);
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background-color: var(--countdown-background-color);
+  }
+  
+  /* Set the background color for the entire page */
+  body {
+    background-color: var(--main-background-color);
+  }
+  /* section-1 h1{
+    font-size: 70px;
+  } */
+  
+  /* Set the font style for the text */
+  h1, h2, p {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Set the width and height of the circular div */
+  .countdown-circle {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background-color: var(--countdown-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    margin: 0 auto;
+  }
+  
+  .countdown-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .container {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--section-heading-color);
+  }
+  
+  p {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  /* Set the font style and size for the countdown text */
+  #countdown {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Style the registration form */
+  #registration-form {
+    background-color: var(--form-background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #888888;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  /* Style the form labels and input fields */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  input[type=text], input[type=email], input[type=tel], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--form-input-background-color);
+  }
+  
+  input[type=submit] {
+    background-color: var(--form-submit-background-color);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: var(--form-submit-hover-background-color);
+  }
+  
+#section-1{
+  height: 100vh;
+}
+
+  /* Set the style for the section headings */
+  #section-1 h1 {
+    color: var(--section-heading-color);
+    font-size: 70px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Set the style for the category description text */
+  #category-description {
+    font-style: italic;
+    margin-top: 30px;
+  }
+
+  #registration-form h2{
+    margin: 60px 0px;
+    font-size: 40px;
+  }
+  
